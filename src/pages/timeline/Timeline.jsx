@@ -67,7 +67,7 @@ const Timeline = () => {
                       className="flex items-center gap-3 py-2 px-4 text-[#1a1a1a] hover:bg-gray-100 rounded-none font-medium"
                     >
                       <div className="w-4 flex justify-center">
-                        {filter === item && <FaCheck className="text-[12px] text-black" />}
+                        {filter === item && <FaCheck className="text-[12px] text-[#1F2937]" />}
                       </div>
                       <span>{item}</span>
                     </button>

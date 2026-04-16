@@ -7,12 +7,12 @@ const Banner = () => {
             <div className="container mx-auto text-center">
                 
                
-                <h1 className="text-4xl md:text-6xl font-extrabold text-[#1A202C] mb-6 tracking-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-[#1A202C] mb-6 tracking-tight">
                     Friends to keep close in your life
                 </h1>
                 
                
-                <p className="max-w-2xl mx-auto text-[#64748B] text-lg md:text-xl mb-10 leading-relaxed">
+                <p className="max-w-2xl mx-auto text-[#64748B] font-normal text-lg md:text-xl mb-10 leading-relaxed">
                     Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
                 </p>
 
