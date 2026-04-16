@@ -93,10 +93,10 @@ const Timeline = () => {
                   </div>
 
                   <div className="flex-grow">
-                    <h4 className="text-[15px] md:text-[17px] text-gray-500 leading-tight">
-                      <span className="font-extrabold text-[#2d3436]">{item.type}</span> with {item.title.split('with ')[1] || 'Friend'}
+                    <h4 className="text-[15px] md:text-[17px] text-[#64748B] font-normal leading-tight">
+                      <span className="font-medium  text-[#244D3F]">{item.type}</span> with {item.title.split('with ')[1] || 'Friend'}
                     </h4>
-                    <p className="text-[12px] md:text-[13px] text-gray-400 font-semibold mt-0.5">
+                    <p className="text-[12px] md:text-[13px] text-[#64748B] font-medium mt-0.5">
                       {item.date}
                     </p>
                   </div>
