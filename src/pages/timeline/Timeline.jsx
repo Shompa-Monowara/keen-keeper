@@ -17,7 +17,7 @@ const Timeline = () => {
     switch (type) {
       case "Call": return <TbPhoneCall className=" text-xl" />;
       case "Text": return <BiMessageDots className=" text-xl" />;
-      case "Video": return <FiVideo className=" text-xl" />;
+      case "Video": return <FiVideogit className=" text-xl" />;
       default: return null;
     }
   };
