@@ -6,13 +6,13 @@ const Banner = () => {
        <section className="bg-[#F8F9FA] py-20 px-4">
             <div className="container mx-auto text-center">
                 
-                {/* Main Heading */}
+               
                 <h1 className="text-4xl md:text-6xl font-extrabold text-[#1A202C] mb-6 tracking-tight">
                     Friends to keep close in your life
                 </h1>
                 
-                {/* Subheading / Description */}
-                <p className="max-w-2xl mx-auto text-gray-500 text-lg md:text-xl mb-10 leading-relaxed">
+               
+                <p className="max-w-2xl mx-auto text-[#64748B] text-lg md:text-xl mb-10 leading-relaxed">
                     Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
                 </p>
 
