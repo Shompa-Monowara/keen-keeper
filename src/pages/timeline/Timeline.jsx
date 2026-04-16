@@ -1,6 +1,9 @@
 import React, { useContext, useState } from "react";
 import { FriendContext } from "../../context/FriendContext";
-import { FaPhoneAlt, FaCommentAlt, FaVideo, FaChevronDown, FaCheck } from "react-icons/fa";
+import { FaChevronDown, FaCheck } from "react-icons/fa";
+import { TbPhoneCall } from "react-icons/tb";
+import { BiMessageDots } from "react-icons/bi";
+import { FiVideo } from "react-icons/fi";
 
 const Timeline = () => {
   const { timeline } = useContext(FriendContext);
@@ -12,9 +15,9 @@ const Timeline = () => {
 
   const getIcon = (type) => {
     switch (type) {
-      case "Call": return <FaPhoneAlt className="text-gray-500 text-xl" />;
-      case "Text": return <FaCommentAlt className="text-gray-500 text-xl" />;
-      case "Video": return <FaVideo className="text-gray-500 text-xl" />;
+      case "Call": return <TbPhoneCall className=" text-xl" />;
+      case "Text": return <BiMessageDots className=" text-xl" />;
+      case "Video": return <FiVideo className=" text-xl" />;
       default: return null;
     }
   };
