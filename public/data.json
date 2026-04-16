@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "David Kim",
+    "picture": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
+    "email": "david.kim@example.com",
+    "days_since_contact": 62,
+    "status": "Almost Due",
+    "tags": ["WORK"],
+    "bio": "Project lead for the new dashboard. Follow up on design specs.",
+    "goal": 65,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 2,
+    "name": "Emma Wilson",
+    "picture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
+    "email": "emma.w@family.com",
+    "days_since_contact": 62,
+    "status": "Overdue",
+    "tags": ["FAMILY"],
+    "bio": "Cousin from Canada. Plan the upcoming family reunion.",
+    "goal": 30,
+    "next_due_date": "2026-03-10"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
+    "email": "lisa.n@workmail.com",
+    "days_since_contact": 62,
+    "status": "On-Track",
+    "tags": ["WORK"],
+    "bio": "QA Engineer. Discuss the latest bug reports for Batch 13 project.",
+    "goal": 90,
+    "next_due_date": "2026-05-15"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg",
+    "email": "james.travel@example.com",
+    "days_since_contact": 62,
+    "status": "Almost Due",
+    "tags": ["HOBBY", "TRAVEL"],
+    "bio": "Met during the hiking trip. Planning a visit to Barishal.",
+    "goal": 60,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 5,
+    "name": "Robert Chen",
+    "picture": "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg",
+    "email": "robert.c@tech.com",
+    "days_since_contact": 15,
+    "status": "On-Track",
+    "tags": ["WORK", "TECH"],
+    "bio": "Frontend Mentor. Helping with Next.js and API integration.",
+    "goal": 30,
+    "next_due_date": "2026-04-28"
+  },
+  {
+    "id": 6,
+    "name": "Sophia Martinez",
+    "picture": "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg",
+    "email": "sophia.m@art.org",
+    "days_since_contact": 40,
+    "status": "Overdue",
+    "tags": ["HOBBY"],
+    "bio": "Painting class partner. Need to return the sketchbooks.",
+    "goal": 20,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 7,
+    "name": "Michael Brown",
+    "picture": "https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg",
+    "email": "michael.b@gym.com",
+    "days_since_contact": 5,
+    "status": "On-Track",
+    "tags": ["HEALTH"],
+    "bio": "Personal trainer. Weekly progress check-in on Sundays.",
+    "goal": 7,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 8,
+    "name": "Chloe Adams",
+    "picture": "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg",
+    "email": "chloe.a@school.net",
+    "days_since_contact": 85,
+    "status": "Overdue",
+    "tags": ["COLLEGE"],
+    "bio": "Old university friend. Discussing career shifts to Web Dev.",
+    "goal": 60,
+    "next_due_date": "2026-02-15"
+  },
+  {
+    "id": 9,
+    "name": "Daniel Lee",
+    "picture": "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg",
+    "email": "daniel.lee@dev.com",
+    "days_since_contact": 12,
+    "status": "Almost Due",
+    "tags": ["WORK", "UI/UX"],
+    "bio": "Designer from Figma team. Reviewing the latest landing page.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 10,
+    "name": "Olivia Taylor",
+    "picture": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
+    "email": "olivia.t@neighborhood.com",
+    "days_since_contact": 2,
+    "status": "On-Track",
+    "tags": ["FAMILY", "NEIGHBOR"],
+    "bio": "Lives next door. Shared recipes for caramel pudding.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  }
+]
