@@ -63,7 +63,7 @@ const Navbar = () => {
                         {/* Sidebar Header */}
                         <div className="flex justify-between items-center mb-8 pb-4 border-b border-gray-100">
                             <h2 className="text-xl font-bold text-[#1F2937]">Menu</h2>
-                            <button onClick={() => setIsOpen(false)} className="text-2xl text-gray-500">
+                            <button onClick={() => setIsOpen(false)} className="text-2xl text-[#64748B]">
                                 <RiCloseLine />
                             </button>
                         </div>
