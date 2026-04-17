@@ -11,23 +11,24 @@ const Timeline = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOrder, setSortOrder] = useState("newest");
 
-  
-  const filteredTimeline = [...timeline] 
-    .filter((t) => {
-      const matchesFilter = filter === "All" || t.type === filter;
-      const matchesSearch = t.title.toLowerCase().includes(searchTerm.toLowerCase());
-      return matchesFilter && matchesSearch;
+
+  const filteredTimeline = [...timeline]
+    .filter((item) => {
+     
+      const isTypeMatch = filter === "All" || item.type === filter;
+
+      
+      const searchLower = searchTerm.toLowerCase();
+      const isSearchMatch = 
+        item.title.toLowerCase().includes(searchLower) || 
+        item.type.toLowerCase().includes(searchLower);
+
+      return isTypeMatch && isSearchMatch;
     })
     .sort((a, b) => {
-     
       const idA = parseFloat(a.id);
       const idB = parseFloat(b.id);
-      
-      if (sortOrder === "newest") {
-        return idB - idA; 
-      } else {
-        return idA - idB; 
-      }
+      return sortOrder === "newest" ? idB - idA : idA - idB;
     });
 
   const getIcon = (type) => {
@@ -53,7 +54,7 @@ const Timeline = () => {
           <h2 className="text-3xl font-bold text-[#1a1a1a] mb-8">Timeline</h2>
           
           <div className="flex flex-col md:flex-row gap-4 mb-8 justify-between items-center">
-            {/* Filter Dropdown */}
+           
             <div className="dropdown w-full md:w-auto"> 
               <label tabIndex={0} className="btn btn-outline border-gray-300 bg-white hover:bg-white hover:border-gray-400 text-[#444] font-normal normal-case w-full md:w-[240px] justify-between shadow-sm min-h-0 h-11">
                 <span className="text-[15px] truncate">{filter === "All" ? "Filter timeline" : filter}</span>
@@ -71,7 +72,13 @@ const Timeline = () => {
             <div className="flex items-center gap-3 w-full md:w-auto">
               <div className="relative flex-grow md:w-64">
                 <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm" />
-                <input type="text" placeholder="Search interactions..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="w-full pl-9 pr-4 py-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-gray-400 shadow-sm h-11" />
+                <input 
+                  type="text" 
+                  placeholder="Search..." 
+                  value={searchTerm} 
+                  onChange={(e) => setSearchTerm(e.target.value)} // Instant State Update
+                  className="w-full pl-9 pr-4 py-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-gray-400 shadow-sm h-11" 
+                />
               </div>
 
               <button 
@@ -87,7 +94,7 @@ const Timeline = () => {
           <div className="space-y-4"> 
             {filteredTimeline.length === 0 ? (
               <div className="text-center py-20 bg-gray-50 rounded-xl border border-dashed border-gray-200">
-                <p className="text-gray-400 font-medium italic">No data found!</p>
+                <p className="text-gray-400 font-medium italic">No matches found!</p>
               </div>
             ) : (
               filteredTimeline.map(item => (
