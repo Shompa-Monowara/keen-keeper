@@ -5,22 +5,19 @@ import { FriendContext } from "../../context/FriendContext";
 const Stats = () => {
   const { timeline } = useContext(FriendContext);
 
-  // 1. Data count logic
   const callCount = timeline?.filter((item) => item.type === "Call").length || 0;
   const textCount = timeline?.filter((item) => item.type === "Text").length || 0;
   const videoCount = timeline?.filter((item) => item.type === "Video").length || 0;
 
   const totalInteractions = callCount + textCount + videoCount;
 
-  // 2. Full data array (colors maintained for consistency)
   const rawData = [
     { name: "Call", value: callCount, fill: "#244D3F" },
     { name: "Text", value: textCount, fill: "#7F37F5" },
     { name: "Video", value: videoCount, fill: "#37A163" },
   ];
 
-  // 3. Dynamic logic: Sudhu shei data filter kora hocche jader value 0 theke boro
-  // Er fole Pie Chart ebong Legend dynamic vabe change hobe
+  // ✅ Only show types with value > 0 for a dynamic chart and legend
   const chartData = rawData.filter(item => item.value > 0);
 
   return (
@@ -35,14 +32,13 @@ const Stats = () => {
           
           <div className="w-full flex justify-center items-center py-6">
             {totalInteractions > 0 ? (
-              <div className="h-[250px] md:h-[300px] w-full">
+              <div className="h-[250px] md:h-[300px] w-full relative">
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
                     <Pie
                       data={chartData} 
                       innerRadius="65%"
                       outerRadius="90%"
-                      
                       paddingAngle={chartData.length > 1 ? 5 : 0} 
                       dataKey="value"
                       stroke="none"
@@ -66,9 +62,7 @@ const Stats = () => {
               </div>
             ) : (
               <div className="text-center w-full py-10">
-                <p className="text-[#8e9faf] font-normal text-[15px]">
-                  No data found!
-                </p>
+                <p className="text-[#8e9faf] font-normal text-[15px]">No data found!</p>
               </div>
             )}
           </div>
