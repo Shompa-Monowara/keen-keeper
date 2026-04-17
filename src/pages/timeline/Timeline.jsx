@@ -43,10 +43,10 @@ const Timeline = () => {
       <div className="w-full max-w-6xl py-12 px-6">
         <h2 className="text-3xl font-bold text-[#1a1a1a] mb-8">Timeline</h2>
 
-        {/* 🔍 Search and Filter Bar */}
+        
         <div className="flex flex-col md:flex-row gap-4 mb-8 items-center justify-between">
           
-          {/* Search Input */}
+         
           <div className="relative w-full md:max-w-sm">
             <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
             <input
@@ -59,7 +59,7 @@ const Timeline = () => {
           </div>
 
           <div className="flex gap-3 w-full md:w-auto">
-            {/* Sort Toggle */}
+           
             <button 
               onClick={() => setSortOrder(sortOrder === "newest" ? "oldest" : "newest")}
               className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-600"
@@ -68,7 +68,7 @@ const Timeline = () => {
               {sortOrder === "newest" ? "Newest First" : "Oldest First"}
             </button>
 
-            {/* Filter Dropdown */}
+           
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-outline border-gray-300 bg-white hover:bg-gray-50 hover:border-gray-400 text-[#444] font-normal normal-case justify-between shadow-sm min-h-0 h-10 px-4">
                 <span className="text-[14px]">{filter === "All" ? "All Types" : filter}</span>

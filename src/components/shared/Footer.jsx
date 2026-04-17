@@ -35,7 +35,7 @@ const Footer = () => {
              
                 <div className="flex flex-col md:flex-row justify-between items-center text-[12px] md:text-sm text-gray-400 gap-y-6">
                     
-                    {/* ✅ Links: 350px-er niche gele automatic vertical (column) hobe jate faka space na hoy */}
+                    
                     <div className="flex flex-col min-[350px]:flex-row flex-wrap justify-center items-center gap-x-4 gap-y-3 order-1 md:order-2 w-full">
                         <a href="#" className="hover:text-white transition-all whitespace-nowrap">Privacy Policy</a>
                         <a href="#" className="hover:text-white transition-all whitespace-nowrap">Terms of Service</a>
