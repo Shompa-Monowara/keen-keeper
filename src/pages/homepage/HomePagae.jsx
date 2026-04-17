@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../../components/homepage/Banner';
-import CounterPage from '../../components/homepage/counter';
 import FriendSection from '../../components/homepage/Friend';
+import CounterPage from '../../components/homepage/Counter';
 
 
 
