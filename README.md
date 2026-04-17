@@ -1,7 +1,10 @@
 # 📌 KeenKeeper
 
-## 📝 Short Description
-**KeenKeeper** is a smart Personal Relationship Manager (PRM) built with React. We designed it to help users maintain consistent connections with their friends through organized tracking, instant interaction logging, and data-driven analytics. With a clean and intuitive dashboard, KeenKeeper ensures we never lose touch with the people who matter most.
+## 📝 Short Description  
+**KeenKeeper** is a beginner-friendly Personal Relationship Manager (PRM) app built with React.  
+It helps users keep track of their friends and reminds them who they should contact next.  
+Users can easily log calls, texts, and video chats, and view simple statistics about their interactions.  
+With a clean and user-friendly dashboard, KeenKeeper makes it easier to stay connected with close friends.
 
 ---
 
